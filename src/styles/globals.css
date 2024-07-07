@@ -7,10 +7,12 @@
 
   --white: #ffffff;
   --grey: #3C3C3C;
+  --pure-black: #000000;
   --black: #1A1A1C;
   --offblack: #242424;
   --offwhite: #D9D9D9;
   --blue: #2B4290;
+  --light-grey: #818181;
 
   --background: var(--offwhite);
   --text-color: var(--black);

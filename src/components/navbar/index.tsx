@@ -6,23 +6,23 @@ import { FiHome } from "react-icons/fi";
 import { FaBrain, FaBlog } from "react-icons/fa";
 import { RiStackLine } from "react-icons/ri";
 
-import navStyles from './navbar.module.css';
+import './navbar.scss';
 
 const Navbar = () => {
     const pathname = usePathname();
     return (
-        <nav className={navStyles.main}>
+        <nav className='navbar'>
             <Link href="/" >
-                <FiHome className={navStyles.icon} size={20} color={pathname === '/' ? '#FFFFFF' : '#ADADAD'} />
+                <FiHome size={20} color={pathname === '/' ? '#FFFFFF' : '#818181'} />
             </Link>
             <Link href="/skills" className="sub-menu">
-                <FaBrain size={20} color={pathname === '/skills' ? '#FFFFFF' : '#ADADAD'} />
+                <FaBrain size={20} color={pathname === '/skills' ? '#FFFFFF' : '#818181'} />
             </Link>
             <Link href="/projects" className="sub-menu">
-                <RiStackLine size={20} color={pathname === '/projects' ? '#FFFFFF' : '#ADADAD'} />
+                <RiStackLine size={20} color={pathname === '/projects' ? '#FFFFFF' : '#818181'} />
             </Link>
             <Link href="/blog" className="sub-menu">
-                <FaBlog size={20} color={pathname === '/blog' ? '#FFFFFF' : '#ADADAD'} />
+                <FaBlog size={20} color={pathname === '/blog' ? '#FFFFFF' : '#818181'} />
             </Link>
         </nav>
     )
