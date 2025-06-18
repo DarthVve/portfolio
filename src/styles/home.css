@@ -1,8 +1,47 @@
-.home {
+.hero {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    padding: 4rem;
-    min-height: 100vh;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1rem;
+    height: calc(100vh - 100px);
     width: 100%;
+    background: url('/images/keyboard.svg') no-repeat right center;
+    /* background-size: 55% auto; */
+
+    & > h1 > span {
+        font-family: 'Lily Script One', cursive;
+        font-size: 3rem;
+        font-weight: 400;
+        color: var(--blue);
+    }
+
+    & > p {
+        width: 50%;
+    }
+}
+
+.typewriter {
+    font-weight: 200;
+    width: 20ch;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid var(--blue);
+    animation: cursor 1s step-start infinite, 
+    text 5s steps(18) alternate infinite;
+}
+
+@keyframes cursor {
+    0%, 100% {
+        border-color: var(--blue);
+    }
+}
+
+@keyframes text {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 20ch;
+    }
 }

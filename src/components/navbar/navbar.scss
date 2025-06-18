@@ -13,4 +13,10 @@
     z-index: 500;
     background: var(--black);
     box-shadow: 0px 0px 20px 3px var(--white);
+
+    .sub-menu {
+        &:hover {
+            color: var(--blue);
+        }
+    }
 }
