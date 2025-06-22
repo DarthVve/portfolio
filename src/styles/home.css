@@ -7,28 +7,54 @@
     height: calc(100vh - 100px);
     width: 100%;
     background: url('/images/keyboard.svg') no-repeat right center;
-    /* background-size: 55% auto; */
+    background-size: 55% auto;
 
     & > h1 > span {
         font-family: 'Lily Script One', cursive;
         font-size: 3rem;
         font-weight: 400;
         color: var(--blue);
+
+        @media screen and (max-width: 480px) {
+            font-size: 2rem;
+        }
     }
 
     & > p {
         width: 50%;
+        font-size: 1.25rem;
+        text-align: center;
+
+        @media screen and (max-width: 920px) {
+            width: 55%;
+            text-align: start;
+        }
+
+        @media screen and (max-width: 480px) {
+            width: 80%;
+            font-size: 1rem;
+            text-align: start;
+        }
+    }
+
+    .skill-text {
+        color: var(--blue);
+        font-weight: 500;
     }
 }
 
 .typewriter {
     font-weight: 200;
-    width: 20ch;
+    width: 40ch;
     white-space: nowrap;
     overflow: hidden;
     border-right: 3px solid var(--blue);
     animation: cursor 1s step-start infinite, 
     text 5s steps(18) alternate infinite;
+
+    @media screen and (max-width: 480px) {
+        font-size: 1rem;
+    }
 }
 
 @keyframes cursor {
@@ -42,6 +68,6 @@
         width: 0;
     }
     100% {
-        width: 20ch;
+        width: 40ch;
     }
 }

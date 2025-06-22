@@ -1,0 +1,22 @@
+.blue {
+    display: flex;
+    width: 100%;
+    gap: 10px;
+    padding: 15px;
+    border-radius: 8px;
+    justify-content: center;
+    align-items: center;
+    color: var(--white);
+    border: 0.5px solid var(--grey);
+    background: var(--blue);
+    font-size: 24px;
+    font-weight: 500;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+
+    &:hover {
+        font-size: 26px;
+        height: 40px;
+        transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s;
+    }
+}
