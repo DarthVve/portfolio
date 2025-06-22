@@ -11,7 +11,7 @@ export default function Home() {
                     delivering end-to-end solutions across diverse industries and teams of
                     varying sizes from lean startups to large tech-driven organizations.
                     I specialize in building scalable web and mobile applications with a strong command of
-                    both frontend and backend technologies, including 
+                    both frontend and backend technologies, including
                     <span className="skill-text">
                         {' '}React, Next.js, Angular, TypeScript, Node.js, NestJS, Express, Python, C#, and Java.{' '}
                     </span>
@@ -19,13 +19,11 @@ export default function Home() {
                     <span className="skill-text">
                         {' '}RESTful API design, GraphQL, microservices, database architecture (SQL and NoSQL), and real-time systems (sockets, websockets, and webRTC/FMC).{' '}
                     </span>
-                    I am also proficient in DevOps practices such as CI/CD automation, containerization with <span className="skill-text">Docker</span>, and deploying to cloud platforms like <span className="skill-text">AWS, Azure, and GCP.</span>
+                    I am also proficient in DevOps practices such as CI/CD automation, containerization with <span className="skill-text">Docker</span>, and deploying to cloud platforms like <span className="skill-text">AWS, Azure, and GCP.{' '}</span>
                     I bring a strong understanding of system architecture, performance optimization, and agile methodologies. Passionate about innovation and problem-solving,
                     I combine technical depth with product intuition to lead and deliver impactful, production-ready solutions.
                 </p>
-                <div className="hero-buttons">
-                    <Button width="9.875rem" blue>View CV</Button>
-                </div>
+                <Button width="9.875rem" blue>View CV</Button>
             </section>
             <section className="home-projects">
 
